@@ -14,11 +14,7 @@ namespace Repository.Configuration
         public void Configure(EntityTypeBuilder<IdentityRole> builder)
         {
             builder.HasData(
-                new IdentityRole
-                {
-                    Name = "Manager",
-                    NormalizedName = "MANAGER"
-                },
+
                 new IdentityRole
                 {
                     Name = "Administrador",
@@ -26,13 +22,18 @@ namespace Repository.Configuration
                 },
                  new IdentityRole
                  {
-                     Name = "Cajero",
-                     NormalizedName = "CAJERO"
+                     Name = "Tecnico",
+                     NormalizedName = "TECNICO"
                  },
                   new IdentityRole
                   {
-                      Name = "Bodega",
-                      NormalizedName = "BODEGA"
+                      Name = "Jugador",
+                      NormalizedName = "JUGADOR"
+                  },
+                  new IdentityRole
+                  {
+                      Name = "Espectador",
+                      NormalizedName = "ESPECTADOR"
                   }
             );
         }

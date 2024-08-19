@@ -68,7 +68,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(s => 
     { 
-        s.SwaggerEndpoint("/swagger/v1/swagger.json", "Gestion de Invitarios");
+        s.SwaggerEndpoint("/swagger/v1/swagger.json", "Campeonato de Futbol");
         //s.SwaggerEndpoint("/swagger/v2/swagger.json", "Code Maze API v2"); 
     });
 }
